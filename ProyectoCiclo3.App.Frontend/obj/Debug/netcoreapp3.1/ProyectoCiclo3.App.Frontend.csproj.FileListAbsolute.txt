@@ -76,3 +76,7 @@ C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\Pr
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\ProyectoCiclo3.App.Frontend.StaticWebAssets.xml
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.genruntimeconfig.cache
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.csproj.CopyComplete
+C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Aeropuerto\Create.cshtml.g.cs
+C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Aeropuerto\List.cshtml.g.cs
+C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\Create.cshtml.g.cs
+C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\List.cshtml.g.cs
