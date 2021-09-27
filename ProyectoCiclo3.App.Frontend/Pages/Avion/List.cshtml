@@ -1,34 +1,26 @@
 @page
+@model ProyectoCiclo3.App.Frontend.Pages.ListAvionModel
 @{
 }
- 
-<table class="table table-hover">
-  <thead>
+
+<h1>Listado de Aviones</h1>
+<table class="table">
+  @foreach (var avion in Model.Aviones)
+
+  {
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <td>@avion.Id</td>
+      <td>@avion.Marca</td>
+      <td>@avion.Modelo</td>
+      <td>@avion.Numero_asientos</td>
+      <td>@avion.Numero_banos</td>
+      <td>@avion.Capacidad_maxima</td>
+      <td>
+        <a class="btn btn-info" asp-page="./Details" asp-route-AvionId="@avion.Id"><i class="fas fa-adjust"></i>Ver</a>
+        <a class="btn btn-info" href="">Editar</a>
+        <a class="btn btn-danger" href="">Eliminar</a>
+      </td>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>Facebook</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry the Bird</td>
-      <td>Arias</td>
-      <td>Instagram</td>
-    </tr>
-  </tbody>
+
+  }
 </table>
