@@ -26,6 +26,18 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
  
         public Aviones GetAvionWithId(int Id){
             return aviones.SingleOrDefault(b => b.Id == Id);
+            
+        }
+        public Aviones Update(Aviones newAvion){
+            var avion = aviones.SingleOrDefault(b => b.Id == newAvion.Id);
+            if(avion != null){
+                avion.Marca = newAvion.Marca;
+                avion.Modelo = newAvion.Modelo;
+                avion.Numero_banos = newAvion.Numero_banos;
+                avion.Numero_asientos = newAvion.Numero_asientos;
+                avion.Capacidad_maxima = newAvion.Capacidad_maxima;
+            }
+        return avion;
         }
     }
 }
