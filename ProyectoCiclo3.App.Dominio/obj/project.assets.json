@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\PorSiLasMoscas\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
       "projectName": "ProyectoCiclo3.App.Dominio",
-      "projectPath": "C:\\Users\\Diego\\Desktop\\PorSiLasMoscas\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+      "projectPath": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\Desktop\\PorSiLasMoscas\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\obj\\",
+      "outputPath": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
