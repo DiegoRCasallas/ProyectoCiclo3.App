@@ -23,11 +23,23 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         {
             return aviones;
         }
- 
+        
+        public Aviones Create(Aviones newAvion)
+        {
+           if(aviones.Count > 0){
+           newAvion.Id=aviones.Max(r => r.Id) +1; 
+            }else{
+               newAvion.Id = 1; 
+            }
+           aviones.Add(newAvion);
+           return newAvion;
+        }
+        
         public Aviones GetAvionWithId(int Id){
             return aviones.SingleOrDefault(b => b.Id == Id);
             
         }
+
         public Aviones Update(Aviones newAvion){
             var avion = aviones.SingleOrDefault(b => b.Id == newAvion.Id);
             if(avion != null){
@@ -39,5 +51,13 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             }
         return avion;
         }
+
+        public Aviones Delete(int Id)
+        {
+        var avion= aviones.SingleOrDefault(b => b.Id == Id);
+        aviones.Remove(avion);
+        return avion;
+        }
+
     }
 }
