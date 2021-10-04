@@ -5742,11 +5742,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\ProyectoCiclo3.App.Frontend.csproj",
       "projectName": "ProyectoCiclo3.App.Frontend",
       "projectPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\ProyectoCiclo3.App.Frontend.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\ProyectoCiclo3.App.Frontend.csproj",
+      "projectName": "ProyectoCiclo3.App.Frontend",
+      "projectPath": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\ProyectoCiclo3.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Frontend\\obj\\",
+>>>>>>> 0fe8b83bc4ed29565a23acc21be2b3be144b15a7
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5760,8 +5768,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
               "projectPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
+=======
+            "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Diego\\Desktop\\clonado\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
+>>>>>>> 0fe8b83bc4ed29565a23acc21be2b3be144b15a7
             }
           }
         }
