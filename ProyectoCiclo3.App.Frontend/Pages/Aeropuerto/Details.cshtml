@@ -1,0 +1,14 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.DetailsAeropuertoModel
+@{
+    var aeropuerto = Model.Aeropuerto;
+}
+ 
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> <b>Id: </b> @aeropuerto.Id</li>
+  <li class="list-group-item"> <b>Nombre: </b> @aeropuerto.Nombre</li>
+  <li class="list-group-item"> <b>Ciudad: </b> @aeropuerto.Ciudad</li>
+  <li class="list-group-item"><b>Latitud y: </b> @aeropuerto.Latitud_y</li>
+  <li class="list-group-item"><b>Longitud x: </b> @aeropuerto.Longitud_x</li>
+  
+</ul>	
