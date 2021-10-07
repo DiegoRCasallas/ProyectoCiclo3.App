@@ -1,25 +1,44 @@
 @page
 @model ProyectoCiclo3.App.Frontend.Pages.ListRutaModel
-@{
+@{     
 }
+ 
+<link rel="stylesheet" href="~/css/List.css" />
+<script src="~/js/List.js"></script>
 
-<h1>Listado de Rutas</h1>
-<table class="table">
-  @foreach (var ruta in Model.Rutas)
 
-  {
-    <tr>
-      <td>@ruta.Id</td>
-      <td>@ruta.Origen</td>
-      <td>@ruta.Destino</td>
-      <td>@ruta.Tiempo_Estimado</td>
-     
-      <td>
-        <a class="btn btn-info" asp-page="./Details" asp-route-RutaId="@ruta.Id"><i class="fas fa-adjust"></i>Ver</a>
-        <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.Id"><i class="fas fa-adjust"></i>Editar</a>
-        <a class="btn btn-danger" href="">Eliminar</a>
-      </td>
-    </tr>
+<div class="container">
+  <h1 style="text-align: center;">Listado de Rutas</h1>
+	<table class="myTable" align="center">
+   	<thead>       
+			<tr>
+				<th>ID</th>
+				<th>Origen</th>
+				<th>Destino</th>
+				<th>Tiempo Estimado</th>
+				<th>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+				</th>
 
-  }
-</table>
+		  </tr>
+		</thead>
+		<tbody>
+      @foreach (var ruta in Model.Rutas)
+      {
+	  <tr>
+			<td>@ruta.id</td>
+			<td>@ruta.origen</td>
+			<td>@ruta.destino</td>
+			<td>@ruta.tiempo_estimado</td>
+			<td >
+		   <form method="POST">
+                    <a class="btn btn-info" asp-page="./Details" asp-route-rutaId="@ruta.id"><i class="fas fa-list-alt"></i></a>
+                    <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.id"><i class="fas fa-edit"></i></a>        
+                        <input type="number" class="d-none" id="eliminar" asp-for="@ruta.id">
+                        <button type="submit" class="btn btn-danger" ><i class="fas fa-trash" ></i></button>
+                    </form>
+			</td>
+		
+  	  </tr>
+      }
+	

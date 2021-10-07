@@ -5835,19 +5835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Developer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
       "projectName": "ProyectoCiclo3.App.Consola",
-      "projectPath": "D:\\Project\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5858,8 +5858,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Project\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
-              "projectPath": "D:\\Project\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
+            "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
             }
           }
         }

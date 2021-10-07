@@ -5,6 +5,7 @@ namespace ProyectoCiclo3.App.Persistencia
 {
     public class AppContext: DbContext{
         public DbSet<Aviones> Aviones { get; set; }
+        public DbSet<Rutas> Rutas { get; set; }
 
 
         

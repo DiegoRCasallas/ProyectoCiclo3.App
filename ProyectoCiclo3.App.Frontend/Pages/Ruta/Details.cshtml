@@ -3,11 +3,33 @@
 @{
     var ruta = Model.Ruta;
 }
- 
-<ul class="list-group list-group-flush">
-  <li class="list-group-item"> <b>Id: </b> @ruta.Id</li>
-  <li class="list-group-item"> <b>Origen: </b> @ruta.Origen</li>
-    <li class="list-group-item"><b>Destino: </b> @ruta.Destino</li>
-  <li class="list-group-item"><b>Tiempo Estimado: </b> @ruta.Tiempo_Estimado</li>
-  
-</ul>	
+
+
+<link rel="stylesheet" href="~/css/Delails.css" />
+
+<section class="form_wrap">
+
+        <section class="cantact_info1">
+            <section class="info_title">
+                <span ></span>
+                
+            </section>
+            
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Ver Rutas</h2>
+            <div class="user_info">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"> <b>Id: </b> @ruta.id</li>
+                  <li class="list-group-item"> <b>Origen: </b> @ruta.origen</li>
+                  <li class="list-group-item"> <b>Destino: </b> @ruta.destino</li>
+                  <li class="list-group-item"><b>Tiempo Estimado: </b> @ruta.tiempo_estimado</li>
+                  
+                </ul>	
+              <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
+            </div>
+        </form>
+
+    </section>
+

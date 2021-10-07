@@ -1,18 +1,33 @@
-@page
+
+
+@page 
+@model ProyectoCiclo3.App.Frontend.Pages.CreateRutaModel
 @{
+var ruta = Model.Ruta;
 }
 
-<div class="text-center">
-  <form action="">
-    <label for="Id" class="form-label">Id:</label>
-    <input type="text" class="form-control" id="Id" name="Id" placeholder="Id">
-    <label for="AeropuertoOringen" class="form-label">Aeropuerto de origen:</label>
-    <input type="text" class="form-control" id="AeropuertoOrigen" name="AeropuertoOrigen" placeholder="Origen">
-    <label for="AeropuertoDestino" class="form-label">Aeropuesto de destino:</label>
-    <input type="text" class="form-control" id="AeropuertoDestino" name="AeropuertoDestino" placeholder="Destino">
-    <label for="TiempoEstimado" class="form-label">Tiempo de vuelo estimado:</label>
-    <input type="number" class="form-control" id="TiempoEstimado" name="TiempoEstimado" placeholder="Horas">
+<link rel="stylesheet" href="~/css/create.css" />
+<h1 style="text-align: center;"> Crear Rutas</h1>
+<div class="card mb-3" style="max-width: 650px;" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style="width:310px; height: 340px;" src="https://p4.wallpaperbetter.com/wallpaper/419/451/700/777-aircraft-airliner-airplane-wallpaper-preview.jpg" class="img-fluid"  alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+  <form method="POST">
+    
+    <label for="origen" class="form-label">  origen:</label>
+    <input type="number" class="form-control" id="origen" name="origen" placeholder="origen" asp-for="@ruta.origen">            
+      <label for="destino" class="form-label">Aeropuesto de destino:</label>
+    <input type="number" class="form-control" id="destino" name="destino" placeholder="destino" asp-for="@ruta.destino">
+    <label for="tiempo_estimado" class="form-label">Tiempo del vuelo Estimado:</label>
+    <input type="number" class="form-control" id="tiempo_estimado" name="tiempo_estimado" placeholder="tiempo estimado" asp-for="@ruta.tiempo_estimado">
+
     <hr>
-    <button type="submit" class="btn btn-success">Enviar</button>
+   
+    <button type="submit" class="btn btn-success">Enviar</button> <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
   </form>
 </div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">

@@ -3,19 +3,21 @@
 @{
     var ruta = Model.Ruta;
 }
+
+  
 <div class="text-center">
-    <form method="POST">
-        <label for="id" class="form-label">Id:</label>
-        <input type="text" class="form-control" id="id" name="id" placeholder="Id" asp-for="@ruta.Id">
-        <label for="origen" class="form-label">Origen:</label>
-        <input type="text" class="form-control" id="origen" name="origen" placeholder="Origen" asp-for="@ruta.Origen">
-        <label for="modelo" class="form-label">Destino:</label>
-        <input type="number" class="form-control" id="destino" name="destino" placeholder="Destino"
-            asp-for="@ruta.Destino">
-        <label for="tiempo estimado" class="form-label">Tiempo Estimado: </label>
-        <input type="number" class="form-control" id="tiempo_estimado" name="tiempo_estimado"
-            placeholder="Tiempo estimado" asp-for="@ruta.Tiempo_Estimado">
-        <hr>
-        <button type="submit" class="btn btn-success">Enviar</button>
-    </form>
+  <form method="POST">
+    <label for="id" class="form-label">id:</label>
+    <input type="number" class="form-control" id="id" name="id" placeholder="id"asp-for="@ruta.id">
+    <label for="origen" class="form-label"> de origen:</label>
+    <input type="number" class="form-control" id="origen" name="origen" placeholder="origen" asp-for="@ruta.origen">
+    <label for="destino" class="form-label">Aeropuesto de destino:</label>
+    <input type="number" class="form-control" id="destino" name="destino" placeholder="destino" asp-for="@ruta.destino">
+    <label for="tiempo_estimado" class="form-label">Tiempo del vuelo Estimado:</label>
+    <input type="number" class="form-control" id="tiempo_estimado" name="tiempo_estimado" placeholder="tiempo estimado" asp-for="@ruta.tiempo_estimado">
+
+    <hr>
+   
+    <button type="submit" class="btn btn-success">Enviar</button> <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
+  </form>
 </div>

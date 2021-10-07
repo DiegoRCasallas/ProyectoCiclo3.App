@@ -10,3 +10,15 @@ C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\Pr
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
 C:\Users\Diego\Desktop\MisionTic\Desarrollo de Software C3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.deps.json
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.dll
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.pdb
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfo.cs
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\Developer\Documents\GitHub\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb

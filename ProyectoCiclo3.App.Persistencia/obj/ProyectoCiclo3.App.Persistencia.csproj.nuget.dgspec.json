@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {}
+    "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj": {
+    "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
         "projectName": "ProyectoCiclo3.App.Dominio",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -53,21 +53,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
+    "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
         "projectName": "ProyectoCiclo3.App.Persistencia",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj"
+              "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj"
               }
             }
           }
@@ -129,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     }

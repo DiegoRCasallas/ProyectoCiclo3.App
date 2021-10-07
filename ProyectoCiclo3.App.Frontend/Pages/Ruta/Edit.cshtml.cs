@@ -20,7 +20,7 @@ public EditRutaModel(RepositorioRutas repositorioRutas)
        }
 public IActionResult OnGet(int rutaId)
         {
-            Ruta=repositorioRutas.GetRutaWithId(rutaId);
+            repositorioRutas.GetRutaWithId(rutaId);
             return Page(); 
         }
 public IActionResult OnPost()
@@ -29,11 +29,12 @@ public IActionResult OnPost()
             {
                 return Page();
             }
-            if(Ruta.Id>0)
+            if(Ruta.id>0)
             {
             Ruta = repositorioRutas.Update(Ruta);
             }
-            return Page();
+            return RedirectToPage("./List");
+           
         }
 
     }

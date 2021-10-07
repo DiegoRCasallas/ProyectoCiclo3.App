@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BfhNcC1PChCgn/sjKRbY4KrXenvFTx8KTG+H2VCYP6GlBEqZSLKTbZHorc74+v2rBxNHxh9nx0z6onbTklUjdA==",
+  "dgSpecHash": "9/EPvTMD1oMYF5+sX8Z/+Y9yaeMIxCfQ+jlRpHTsJG8zClCogDeCgVZKTrTqKotk8imV2UUq2RaQN2KRTWF+pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\Developer\\Documents\\GitHub\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Diego\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Diego\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Developer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Developer\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Diego\\Desktop\\MisionTic\\Desarrollo de Software C3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
