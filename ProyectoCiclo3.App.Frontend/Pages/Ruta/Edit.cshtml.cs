@@ -14,16 +14,16 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         private readonly RepositorioRutas repositorioRutas;
         [BindProperty]
         public Rutas Ruta {get;set;}
-public EditRutaModel(RepositorioRutas repositorioRutas)
+        public EditRutaModel(RepositorioRutas repositorioRutas)
        {
             this.repositorioRutas=repositorioRutas;
        }
-public IActionResult OnGet(int rutaId)
+        public IActionResult OnGet(int rutaId)
         {
             Ruta=repositorioRutas.GetRutaWithId(rutaId);
             return Page(); 
         }
-public IActionResult OnPost()
+        public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
             {

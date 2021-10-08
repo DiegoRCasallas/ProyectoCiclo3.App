@@ -14,16 +14,19 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         private readonly RepositorioAviones repositorioAviones;
         [BindProperty]
         public Aviones Avion {get;set;}
-public EditAvionModel(RepositorioAviones repositorioAviones)
-       {
+        
+        public EditAvionModel(RepositorioAviones repositorioAviones)
+        {    
             this.repositorioAviones=repositorioAviones;
-       }
-public IActionResult OnGet(int avionId)
+        }
+
+        public IActionResult OnGet(int avionId)
         {
             Avion=repositorioAviones.GetAvionWithId(avionId);
             return Page(); 
         }
-public IActionResult OnPost()
+        
+        public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
             {
@@ -33,7 +36,7 @@ public IActionResult OnPost()
             {
             Avion = repositorioAviones.Update(Avion);
             }
-            return Page();
+            return RedirectToPage("./List");
         }
 
     }

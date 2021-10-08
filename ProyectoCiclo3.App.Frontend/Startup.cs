@@ -26,6 +26,7 @@ namespace ProyectoCiclo3.App.Frontend
         {
             services.AddRazorPages();
             services.AddSingleton<RepositorioAviones, RepositorioAviones>();
+            services.AddSingleton<RepositorioAeropuertos, RepositorioAeropuertos>();
             services.AddSingleton<RepositorioRutas, RepositorioRutas>();
              
 

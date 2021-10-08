@@ -1,13 +1,12 @@
 @page
 @model ProyectoCiclo3.App.Frontend.Pages.DetailsRutaModel
 @{
-    var ruta = Model.Ruta;
+  var ruta = Model.Ruta;
 }
- 
+
 <ul class="list-group list-group-flush">
   <li class="list-group-item"> <b>Id: </b> @ruta.Id</li>
   <li class="list-group-item"> <b>Origen: </b> @ruta.Origen</li>
-    <li class="list-group-item"><b>Destino: </b> @ruta.Destino</li>
+  <li class="list-group-item"><b>Destino: </b> @ruta.Destino</li>
   <li class="list-group-item"><b>Tiempo Estimado: </b> @ruta.Tiempo_Estimado</li>
-  
-</ul>	
+</ul>

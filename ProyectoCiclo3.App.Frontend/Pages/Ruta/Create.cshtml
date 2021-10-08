@@ -1,17 +1,19 @@
 @page
+@model ProyectoCiclo3.App.Frontend.Pages.FormRutaModel
 @{
+  var ruta = Model.Ruta;
 }
 
 <div class="text-center">
-  <form action="">
-    <label for="Id" class="form-label">Id:</label>
-    <input type="text" class="form-control" id="Id" name="Id" placeholder="Id">
+  <form method="POST">
+    @*<label for="Id" class="form-label">Id:</label>
+    <input type="text" class="form-control" id="Id" name="Id" placeholder="Id">*@
     <label for="AeropuertoOringen" class="form-label">Aeropuerto de origen:</label>
-    <input type="text" class="form-control" id="AeropuertoOrigen" name="AeropuertoOrigen" placeholder="Origen">
+    <input type="text" class="form-control" id="AeropuertoOrigen" placeholder="Origen" asp-for="@ruta.Origen">
     <label for="AeropuertoDestino" class="form-label">Aeropuesto de destino:</label>
-    <input type="text" class="form-control" id="AeropuertoDestino" name="AeropuertoDestino" placeholder="Destino">
+    <input type="text" class="form-control" id="AeropuertoDestino"  placeholder="Destino" asp-for="@ruta.Destino">
     <label for="TiempoEstimado" class="form-label">Tiempo de vuelo estimado:</label>
-    <input type="number" class="form-control" id="TiempoEstimado" name="TiempoEstimado" placeholder="Horas">
+    <input type="number" class="form-control" id="TiempoEstimado" placeholder="Horas" asp-for="@ruta.Tiempo_Estimado">
     <hr>
     <button type="submit" class="btn btn-success">Enviar</button>
   </form>

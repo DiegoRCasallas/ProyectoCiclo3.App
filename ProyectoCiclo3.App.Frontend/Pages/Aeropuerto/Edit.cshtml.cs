@@ -14,16 +14,19 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         private readonly RepositorioAeropuertos repositorioAeropuertos;
         [BindProperty]
         public Aeropuertos Aeropuerto {get;set;}
-public EditAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
-       {
+        
+        public EditAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
+        {
             this.repositorioAeropuertos=repositorioAeropuertos;
-       }
-public IActionResult OnGet(int aeropuertoId)
+        }
+        
+        public IActionResult OnGet(int aeropuertoId)
         {
             Aeropuerto=repositorioAeropuertos.GetAeropuertoWithId(aeropuertoId);
             return Page(); 
         }
-public IActionResult OnPost()
+        
+        public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
             {
@@ -33,7 +36,7 @@ public IActionResult OnPost()
             {
             Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
             }
-            return Page();
+            return RedirectToPage("./List");
         }
 
     }

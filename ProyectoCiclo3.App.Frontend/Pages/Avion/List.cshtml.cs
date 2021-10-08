@@ -22,7 +22,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         this.repositorioAviones=repositorioAviones;
         }
  
-         public void OnGet()
+        public void OnGet()
         {
         Aviones=repositorioAviones.GetAll();
         }
@@ -31,9 +31,9 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         {
             if(avion.Id>0)
             {
-            avion = repositorioAviones.Delete(avion.Id);
-
+             repositorioAviones.Delete(avion.Id);
             }
+
             return RedirectToPage("./List");
 
         }

@@ -11,17 +11,17 @@ namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class DetailsAeropuertoModel : PageModel
     {
-       private readonly RepositorioAeropuertos repositorioAeropuertos;
-              public Aeropuertos Aeropuerto {get;set;}
+        private readonly RepositorioAeropuertos repositorioAeropuertos;
+        public Aeropuertos Aeropuerto {get;set;}
  
         public DetailsAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
-       {
+        {
             this.repositorioAeropuertos=repositorioAeropuertos;
-       }
+        }
  
         public IActionResult OnGet(int aeropuertoId)
         {
-                Aeropuerto = repositorioAeropuertos.GetAeropuertoWithId(aeropuertoId);
+            Aeropuerto = repositorioAeropuertos.GetAeropuertoWithId(aeropuertoId);
                 return Page();
  
         }
