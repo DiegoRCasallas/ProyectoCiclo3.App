@@ -6,12 +6,27 @@
 
 <div class="text-center">
   <form method="POST">
-    @*<label for="Id" class="form-label">Id:</label>
-    <input type="text" class="form-control" id="Id" name="Id" placeholder="Id">*@
+
     <label for="AeropuertoOringen" class="form-label">Aeropuerto de origen:</label>
-    <input type="text" class="form-control" id="AeropuertoOrigen" placeholder="Origen" asp-for="@ruta.Origen">
+    @*<input type="text" class="form-control" id="AeropuertoOrigen" placeholder="Origen" asp-for="@ruta.Origen">*@
+
+    <select asp-for="@ruta.Origen" class="form-control">
+      <option value="">Seleccionar un aeropuerto</option>
+      @foreach (var aeropuerto in Model.Aeropuertos)
+      {
+        <option value="@aeropuerto.Id">@aeropuerto.Nombre - @aeropuerto.Ciudad/@aeropuerto.Pais</option>
+      }
+    </select>
+
     <label for="AeropuertoDestino" class="form-label">Aeropuesto de destino:</label>
-    <input type="text" class="form-control" id="AeropuertoDestino"  placeholder="Destino" asp-for="@ruta.Destino">
+
+    <select asp-for="@ruta.Destino" class="form-control">
+      <option value="">Seleccionar un aeropuerto</option>
+      @foreach (var aeropuerto in Model.Aeropuertos)
+      {
+        <option value="@aeropuerto.Id">@aeropuerto.Nombre - @aeropuerto.Ciudad/@aeropuerto.Pais</option>
+      }
+    </select>
     <label for="TiempoEstimado" class="form-label">Tiempo de vuelo estimado:</label>
     <input type="number" class="form-control" id="TiempoEstimado" placeholder="Horas" asp-for="@ruta.Tiempo_Estimado">
     <hr>
