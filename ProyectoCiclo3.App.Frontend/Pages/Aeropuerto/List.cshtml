@@ -29,12 +29,12 @@
         <td>@aeropuerto.Longitud_x</td>
         <td>
           <form method="POST">
-            <a class="btn btn-info" asp-page="./Details" asp-route-aeropuertoId="@aeropuerto.Id"><i
+            <a class="btn btn-info" asp-page="./Details" asp-route-aeropuertoId="@aeropuerto.Id" title="Ver detalles"><i
               class="fas fa-list-alt"></i></a>
-            <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.Id"><i
+            <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.Id"  title="Editar"><i
               class="fas fa-edit"></i></a>
             <input type="number" class="d-none" id="eliminar" asp-for="@aeropuerto.Id">
-            <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash" title="Eliminar"></i></button>
           </form>
         </td>
       </tr>

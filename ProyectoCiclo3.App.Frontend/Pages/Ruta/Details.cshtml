@@ -3,10 +3,29 @@
 @{
   var ruta = Model.Ruta;
 }
+<link rel="stylesheet" href="~/css/Details.css" />
+<section class="form_wrap">
 
-<ul class="list-group list-group-flush">
-  <li class="list-group-item"> <b>Id: </b> @ruta.Id</li>
+  <section class="cantact_info1">
+    <section class="info_title">
+      <span></span>
+
+    </section>
+
+  </section>
+  <form action="" class="form_contact">
+    <h2>Ver Rutas</h2>
+    <div class="user_info">
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <b>Id: </b> @ruta.Id</li>
   <li class="list-group-item"> <b>Origen: </b> @ruta.Origen</li>
   <li class="list-group-item"><b>Destino: </b> @ruta.Destino</li>
   <li class="list-group-item"><b>Tiempo Estimado: </b> @ruta.Tiempo_Estimado</li>
-</ul>
+      </ul>
+      <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
+    </div>
+  </form>
+
+</section>
+
+  

@@ -2,7 +2,8 @@
 @model ProyectoCiclo3.App.Frontend.Pages.ListRutaModel
 @{
 }
-
+<link rel="stylesheet" href="~/css/Tablas.css" />
+<div class="container">
 <h1>Listado de Rutas</h1>
 <table class="table">
 
@@ -23,14 +24,17 @@
         <td>@ruta.Destino</td>
         <td>@ruta.Tiempo_Estimado</td>
         <td>
-          <a class="btn btn-info" asp-page="./Details" asp-route-RutaId="@ruta.Id"><i class="fas fa-adjust"></i>Ver</a>
-          <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.Id"><i class="fas fa-adjust"></i>Editar</a>
           <form method="POST">
-            <input type="number" class="d-none" id="Id" asp-for="@ruta.Id">
-            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a class="btn btn-info" asp-page="./Details" asp-route-rutaId="@ruta.Id" title="Ver detalles"><i
+              class="fas fa-list-alt"></i></a>
+            <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.Id" title="Editar"><i
+              class="fas fa-edit"></i></a>
+            <input type="number" class="d-none" id="eliminar" asp-for="@ruta.Id" >
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash" title="Eliminar"></i></button>
           </form>
         </td>
       </tr>
     </tbody>
   }
 </table>
+</div>

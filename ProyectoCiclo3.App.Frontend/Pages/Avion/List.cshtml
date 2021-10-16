@@ -3,6 +3,8 @@
 @{
 }
 
+<link rel="stylesheet" href="~/css/Tablas.css" />
+<div class="container">
 <h1>Listado de Aviones</h1>
 <table class="table">
 
@@ -27,11 +29,13 @@
         <td>@avion.Numero_banos</td>
         <td>@avion.Capacidad_maxima</td>
         <td>
-          <a class="btn btn-info" asp-page="./Details" asp-route-AvionId="@avion.Id"><i class="fas fa-adjust"></i>Ver</a>
-          <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.Id"><i class="fas fa-adjust"></i>Editar</a>
-          <form method="POST">
-            <input type="number" class="d-none" id="Id" asp-for="@avion.Id">
-            <button type="submit" class="btn btn-danger">Eliminar</button>
+           <form method="POST">
+            <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.Id" title="Ver detalles"><i
+              class="fas fa-list-alt"></i></a>
+            <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.Id" title="Editar"><i
+              class="fas fa-edit"></i></a>
+            <input type="number" class="d-none" id="eliminar" asp-for="@avion.Id" >
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash" title="Eliminar"></i></button>
           </form>
         </td>
       </tr>
