@@ -2,27 +2,43 @@
 @model ProyectoCiclo3.App.Frontend.Pages.ListAeropuertoModel
 @{
 }
-
+<link rel="stylesheet" href="~/css/Tablas.css" />
+<div class="container">
 <h1>Listado de Aeropuertos</h1>
+
 <table class="table">
-  @foreach (var aeropuerto in Model.Aeropuertos)
 
-  {
+  <thead>
     <tr>
-      <td>@aeropuerto.Id</td>
-      <td>@aeropuerto.Nombre</td>
-      <td>@aeropuerto.Ciudad</td>
-      <td>@aeropuerto.Latitud_y</td>
-      <td>@aeropuerto.Longitud_x</td>     
-      <td>
-        <a class="btn btn-info" asp-page="./Details" asp-route-AeropuertoId="@aeropuerto.Id"><i class="fas fa-adjust"></i>Ver</a>
-        <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.Id"><i class="fas fa-adjust"></i>Editar</a>
-         <form method="POST">
-            <input type="number" class="d-none" id="Id" asp-for="@aeropuerto.Id">
-              <button type="submit"class="btn btn-danger">Eliminar</button>
-            </form>
-      </td>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Ciudad</th>
+      <th>Latitud </th>
+      <th>Longitud</th>
+      <th></th>
     </tr>
-
+  </thead>
+  @foreach (var aeropuerto in Model.Aeropuertos)
+  {
+    <tbody>
+      <tr>
+        <td>@aeropuerto.Id</td>
+        <td>@aeropuerto.Nombre</td>
+        <td>@aeropuerto.Ciudad</td>
+        <td>@aeropuerto.Latitud_y</td>
+        <td>@aeropuerto.Longitud_x</td>
+        <td>
+          <form method="POST">
+            <a class="btn btn-info" asp-page="./Details" asp-route-aeropuertoId="@aeropuerto.Id"><i
+              class="fas fa-list-alt"></i></a>
+            <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.Id"><i
+              class="fas fa-edit"></i></a>
+            <input type="number" class="d-none" id="eliminar" asp-for="@aeropuerto.Id">
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
   }
 </table>
+</div>

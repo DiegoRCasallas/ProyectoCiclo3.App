@@ -42,7 +42,8 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         public Aeropuertos Update(Aeropuertos newAeropuerto)
         {
             var aeropuerto = aeropuertos.SingleOrDefault(b => b.Id == newAeropuerto.Id);
-            if(aeropuerto != null){
+            if(aeropuerto != null)
+            {
                 aeropuerto.Nombre = newAeropuerto.Nombre;
                 aeropuerto.Ciudad = newAeropuerto.Ciudad;
                 aeropuerto.Pais = newAeropuerto.Pais;

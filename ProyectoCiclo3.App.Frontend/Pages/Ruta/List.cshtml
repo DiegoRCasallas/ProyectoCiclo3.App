@@ -5,23 +5,32 @@
 
 <h1>Listado de Rutas</h1>
 <table class="table">
-  @foreach (var ruta in Model.Rutas)
 
-  {
+  <thead>
     <tr>
-      <td>@ruta.Id</td>
-      <td>@ruta.Origen</td>
-      <td>@ruta.Destino</td>
-      <td>@ruta.Tiempo_Estimado</td>     
-      <td>
-        <a class="btn btn-info" asp-page="./Details" asp-route-RutaId="@ruta.Id"><i class="fas fa-adjust"></i>Ver</a>
-        <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.Id"><i class="fas fa-adjust"></i>Editar</a>
-         <form method="POST">
-          <input type="number" class="d-none" id="Id" asp-for="@ruta.Id">
-          <button type="submit" class="btn btn-danger">Eliminar</button>
-        </form>
-      </td>
+      <th>ID</th>
+      <th>Origen</th>
+      <th>Destino</th>
+      <th>Tiempo Estimado</th>
     </tr>
-
+  </thead>
+  @foreach (var ruta in Model.Rutas)
+  {
+    <tbody>
+      <tr>
+        <td>@ruta.Id</td>
+        <td>@ruta.Origen</td>
+        <td>@ruta.Destino</td>
+        <td>@ruta.Tiempo_Estimado</td>
+        <td>
+          <a class="btn btn-info" asp-page="./Details" asp-route-RutaId="@ruta.Id"><i class="fas fa-adjust"></i>Ver</a>
+          <a class="btn btn-info" asp-page="./Edit" asp-route-rutaId="@ruta.Id"><i class="fas fa-adjust"></i>Editar</a>
+          <form method="POST">
+            <input type="number" class="d-none" id="Id" asp-for="@ruta.Id">
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
   }
 </table>
