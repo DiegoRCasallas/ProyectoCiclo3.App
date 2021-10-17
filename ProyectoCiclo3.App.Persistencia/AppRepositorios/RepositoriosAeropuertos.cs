@@ -41,7 +41,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         
         public Aeropuertos Update(Aeropuertos newAeropuerto)
         {
-            var aeropuerto = aeropuertos.SingleOrDefault(b => b.Id == newAeropuerto.Id);
+           var aeropuerto = _appContext.Aeropuertos.Find(newAeropuerto.Id);
             if(aeropuerto != null)
             {
                 aeropuerto.Nombre = newAeropuerto.Nombre;

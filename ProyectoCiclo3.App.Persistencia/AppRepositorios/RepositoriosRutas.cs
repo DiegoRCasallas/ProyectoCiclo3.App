@@ -31,7 +31,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 
         public Rutas Update(Rutas newRuta)
         {
-            var ruta = rutas.SingleOrDefault(b => b.Id == newRuta.Id);
+            var user = _appContext.Usuarios.Find(newUsuario.id);
             if(ruta != null)
             {
                 ruta.Origen = newRuta.Origen;
