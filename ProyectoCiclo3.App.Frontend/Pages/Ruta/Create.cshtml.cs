@@ -29,14 +29,15 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             Aeropuertos = repositorioAeropuertos.GetAll();
         }
  
-        public IActionResult OnPost()
+        public IActionResult OnPost(int Origen,int Destino, int Tiempo_Estimado)
         {
             if(!ModelState.IsValid)
             {
                 return Page();
-            }            
-            Ruta = repositorioRutas.Create(Ruta);            
+            }else{           
+            Ruta = repositorioRutas.Create(Origen, Destino, Tiempo_Estimado);            
             return RedirectToPage("./List");
+            } 
         }
     }
 }

@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using ProyectoCiclo3.App.Dominio;
 using System.Linq;
 using System;
+using Microsoft.EntityFrameworkCore;
+
 namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioRutas
@@ -11,17 +13,26 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         private readonly AppContext _appContext = new AppContext();
            
         public IEnumerable<Rutas> GetAll()
-        {
-            
-            return _appContext.Rutas;
+         {
+           return _appContext.Rutas.Include(u => u.Origen)
+                       .Include(u => u.Destino);
+                     
         }
+
         
-        public Rutas Create(Rutas newRuta)
-        {           
-        var addRuta = _appContext.Rutas.Add(newRuta);
-        _appContext.SaveChanges();
-        return addRuta.Entity;
+       public Rutas Create(int Origen, int Destino, int Tiempo_Estimado)
+        {
+            var newRuta = new Rutas();
+            newRuta.Destino = _appContext.Aeropuertos.Find(Origen);;
+            newRuta.Origen = _appContext.Aeropuertos.Find(Destino);          
+            newRuta.Tiempo_Estimado = Tiempo_Estimado;
+ 
+            var addRuta = _appContext.Rutas.Add(newRuta);
+            _appContext.SaveChanges();
+            return addRuta.Entity;
         }
+
+
         
         public Rutas GetRutaWithId(int Id)
         {
@@ -31,7 +42,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 
         public Rutas Update(Rutas newRuta)
         {
-            var user = _appContext.Usuarios.Find(newUsuario.id);
+            var ruta = _appContext.Rutas.Find(newRuta.Id);
             if(ruta != null)
             {
                 ruta.Origen = newRuta.Origen;

@@ -9,5 +9,6 @@ namespace ProyectoCiclo3.App.Dominio{
         public Aeropuertos Destino {get; set; }
         public int Tiempo_Estimado { get; set; }
         
+        
     }
 }
